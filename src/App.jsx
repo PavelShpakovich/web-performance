@@ -16,19 +16,19 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: primary,
-      contrastText: '#fff'
+      contrastText: '#fff',
     },
     secondary: {
       main: '#000000',
-      contrastText: primary
-    }
-  }
+      contrastText: primary,
+    },
+  },
 });
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.mineBitcoin(1500);
+    // this.mineBitcoin(1500);
   }
   mineBitcoin(duration) {
     const start = new Date().getTime();
@@ -41,13 +41,13 @@ class App extends React.Component {
       <Router>
         <MuiThemeProvider theme={theme}>
           <div>
-            <Header/>
-            <Route exact path="/" component={Home}/>
-            <Route path="/brrto" component={Pages.Brrto}/>
-            <Route path="/pezza" component={Pages.Pezza}/>
-            <Route path="/fesh" component={Pages.Fesh}/>
-            <Route path="/soop" component={Pages.Soop}/>
-            <Typography variant="body1">Built with 🐟 by Tony the 🐈</Typography>
+            <Header />
+            <Route exact path='/' component={Home} />
+            <Route path='/brrto' component={Pages.Brrto} />
+            <Route path='/pezza' component={Pages.Pezza} />
+            <Route path='/fesh' component={Pages.Fesh} />
+            <Route path='/soop' component={Pages.Soop} />
+            <Typography variant='body1'>Built with 🐟 by Tony the 🐈</Typography>
           </div>
         </MuiThemeProvider>
       </Router>
