@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack"
   },
-  "author": "Voinov A.V.",
+  "author": "Shpakovich P.A.",
   "license": "ISC",
   "dependencies": {
     "file-loader": "^6.2.0",
@@ -14,5 +14,12 @@
     "html-webpack-plugin": "^5.3.2",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "webpack-bundle-analyzer": "^4.8.0"
   }
 }
