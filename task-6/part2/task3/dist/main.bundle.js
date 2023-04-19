@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("box").appendChild(function(){const e=document.createElement("ul");for(let t=0;t<5;++t){const n=document.createElement("li");n.textContent=`#${t+1} Li Element`,e.appendChild(n)}return e}())})();
